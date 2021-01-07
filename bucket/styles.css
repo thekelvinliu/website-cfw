@@ -1,0 +1,173 @@
+/* loosely based on milligram css https://milligram.io */
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue',
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #222;
+  color: #ddd;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+a {
+  color: #35a63e;
+  text-decoration: none;
+}
+a:focus,
+a:hover {
+  color: #ddd;
+  transition: all 0.2s ease;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+h1 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.25;
+}
+h3 {
+  font-size: 2.2rem;
+  line-height: 1.3;
+}
+h4 {
+  font-size: 2rem;
+  line-height: 1.35;
+}
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+h6 {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+img {
+  max-width: 100%;
+}
+p {
+  margin-top: 0;
+}
+ol,
+ul {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  font-size: 90%;
+  margin: 1.5rem 0 1.5rem 3rem;
+}
+ol {
+  list-style: decimal inside;
+}
+ul {
+  list-style: circle inside;
+}
+li {
+  margin-bottom: 1rem;
+}
+ol,
+p,
+ul {
+  margin-bottom: 2.5rem;
+}
+strong {
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem;
+  height: 100%;
+  max-width: 112rem;
+}
+
+.emoji-item {
+  margin-left: 1rem;
+  list-style: none;
+}
+.emoji-item:nth-child(6n + 1):before {
+  content: '✊🏿 ';
+  margin-left: 1rem;
+}
+.emoji-item:nth-child(6n + 2):before {
+  content: '✊🏾 ';
+  margin-left: 2rem;
+}
+.emoji-item:nth-child(6n + 3):before {
+  content: '✊🏽 ';
+  margin-left: 3rem;
+}
+.emoji-item:nth-child(6n + 4):before {
+  content: '✊ ';
+  margin-left: 4rem;
+}
+.emoji-item:nth-child(6n + 5):before {
+  content: '✊🏼 ';
+  margin-left: 5rem;
+}
+.emoji-item:nth-child(6n):before {
+  content: '✊🏻 ';
+  margin-left: 6rem;
+}
+
+.foot {
+  margin-top: 4rem;
+}
+.foot span {
+  display: block;
+}
+
+.nyu {
+  background-color: #57068c;
+  color: #ddd;
+}
+.nyu:hover {
+  background-color: #222;
+}
+
+@media only screen and (min-width: 1024px) {
+  html {
+    height: 100vh;
+  }
+  .foot {
+    margin-top: auto;
+  }
+  .foot span {
+    display: inline-block;
+  }
+  .foot span + span {
+    margin-left: 4rem;
+  }
+  .foot span + span:before {
+    margin-right: 4rem;
+    content: '•';
+  }
+}
