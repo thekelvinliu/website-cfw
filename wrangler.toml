@@ -1,0 +1,10 @@
+name = "thekelvinliu-com-worker"
+type = "webpack"
+workers_dev = true
+
+account_id = ""
+vars = { B2_APPLICATION_KEY = "", B2_APPLICATION_KEY_ID = "" }
+
+[env.production]
+route = "www.thekelvinliu.com/*"
+zone_id = ""
